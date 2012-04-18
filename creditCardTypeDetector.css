@@ -6,38 +6,31 @@ ul.card_logos {
 
 .card_visa, .card_mastercard, .card_amex, .card_discover, .card_diners, .card_jcb {
 	display: inline-block;
-	width: 50px;
-	height: 30px;
+	width: 51px;
+	height: 32px;
 	overflow: hidden;
 	text-align: left;
 	text-indent: -999px;
 	background: url(sprite-cards.png) 0 0 no-repeat;
 }
 
-.card_mastercard {
-	background-position: -55px 0;
-}
+.card_mastercard { background-position: -51px 0; }
+.card_amex       { background-position: -102px 0; }
+.card_discover   { background-position: -153px 0; }
+.card_diners     { background-position: -204px 0; }
+.card_jcb        { background-position: -255px 0; }
 
-.card_amex {
-	background-position: -110px 0;
-}
+.card_visa.off       { background-position: 0px -32px; }
+.card_mastercard.off { background-position: -51px -32px; }
+.card_amex.off       { background-position: -102px -32px; }
+.card_discover.off   { background-position: -153px -32px; }
+.card_diners.off     { background-position: -204px -32px; }
+.card_jcb.off        { background-position: -255px -32px; }
 
-.card_discover {
-	background-position: -165px 0;
-}
-
-.card_diners {
-	background-position: -220px 0;
-}
-
-.card_jcb {
-	background-position: -660px 0;
-}
-
-.is_visa li, .is_mastercard li, .is_amex li, .is_discover li, .is_diners li, .is_jcb li, .is_nothing li {
-	opacity: .2;
-}
-
-.is_visa li.card_visa, .is_mastercard li.card_mastercard, .is_amex li.card_amex, .is_discover li.card_discover, .is_diners li.card_diners, .is_jcb li.card_jcb {
-	opacity: 1;
+.card_logos li {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 }
